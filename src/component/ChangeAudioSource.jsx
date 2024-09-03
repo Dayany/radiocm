@@ -1,8 +1,9 @@
 import React from "react";
+import { SERVER_URL } from "../constants";
 
 function ChangeAudioSource() {
   const changeAudioSource = (newSource) => {
-    fetch("http://localhost:4000/change-audio", {
+    fetch(SERVER_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

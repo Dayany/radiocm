@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import io from "socket.io-client";
-// const socket = io("http://localhost:4000"); // Replace with your server URL
-const socket = io("https://massive-tourmaline-avatar.glitch.me/");
+import { SERVER_URL } from "../constants";
+
+const socket = io(SERVER_URL);
 
 function App() {
   const [audioSource, setAudioSource] = useState("");
