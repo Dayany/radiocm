@@ -3,7 +3,7 @@ import { SERVER_URL } from "../constants";
 
 function ChangeAudioSource() {
   const changeAudioSource = (newSource) => {
-    fetch(SERVER_URL, {
+    fetch(SERVER_URL + "/change-audio", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
