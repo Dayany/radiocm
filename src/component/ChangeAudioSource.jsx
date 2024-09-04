@@ -21,10 +21,12 @@ function ChangeAudioSource() {
       <div>
         <button
           onClick={() =>
-            changeAudioSource("https://npr-ice.streamguys1.com/live.mp3")
+            changeAudioSource(
+              "https://stream-172.zeno.fm/woe8snbz8pntv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ3b2U4c25iejhwbnR2IiwiaG9zdCI6InN0cmVhbS0xNzIuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6IkNqbEo0NHNXU1B5T1ZqUDV0ZW1JbUEiLCJpYXQiOjE3MjU0MTUxNDUsImV4cCI6MTcyNTQxNTIwNX0.Io4CyyPJGEfPuv1GpmhoiY-73oZSOjtUsAVWSU-r04w",
+            )
           }
         >
-          NPR Live Stream
+          Canal 1
         </button>
         <button
           onClick={() => changeAudioSource("https://fm939.wnyc.org/wnycfm-web")}
